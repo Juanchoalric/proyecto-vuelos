@@ -1,0 +1,26 @@
+//
+   Created by juancho on 10/04/17.
+
+div
+    div.contenedor
+        ul.imagen
+            li.secundario
+                img(src="{{$ctrl.hotel.image}}")
+            li.secundario
+        ul.descripcion
+            li.titulo {{$ctrl.hotel.name}}
+            li.estrellas {{$ctrl.ponerEstrellas()}}
+            ul
+                li.amenities Solo habitacion
+            li.secundario
+        ul.precio
+            li.descripcion_precio Precio por noche por habitacion
+            li.contenedor_precio
+                span.ars ARS
+                div.precio_argentina {{$ctrl.hotel.price}}
+            li.impuestos impuestos y tasas no incluido
+            li.more
+                button Ver hotel
+            li.pago Pagá en cuotas
+            li.pago Pagá en destino
+

@@ -5,13 +5,14 @@ div
     div.contenedor
         ul.imagen
             li.secundario
-                img(src="{{$ctrl.hotel.image}}")
+                slider(items="$ctrl.images")
             li.secundario
         ul.descripcion
             li.titulo {{$ctrl.hotel.name}}
             li.estrellas {{$ctrl.ponerEstrellas()}}
-            ul
-                li.amenities Solo habitacion
+            ul Solo habitacion
+                li.amenities(ng-repeat="(key, value) in $ctrl.hotel.amenities" ng-class="$ctrl.getIcon(key)")
+
             li.secundario
         ul.precio
             li.descripcion_precio Precio por noche por habitacion

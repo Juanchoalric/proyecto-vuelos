@@ -20,7 +20,6 @@
             dataservice.serviceFunction().then((data) => {
               //console.log(data);
               this.hotels = data.data;
-              console.log(this.hotels);
             })
             .catch((error) =>{
               console.log(error);

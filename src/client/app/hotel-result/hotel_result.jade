@@ -3,6 +3,6 @@ div.breadcrumb-ctn
 section.search-ctn
   
 section.filter-ctn
-  filter
+  filter(ng-if="$ctrl.hotels", name="asd")
 section.hotel-ctn
     hotel-list(hotels='$ctrl.hotels')

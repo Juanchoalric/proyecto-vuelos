@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('hotel_result', []);
+        .module('hotel_result', ['hotel_filter']);
 })();

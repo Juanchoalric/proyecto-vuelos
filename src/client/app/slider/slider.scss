@@ -1,29 +1,38 @@
-.slider,
-  .nav-ctn,
-      li {
-        cursor: pointer;
-        font-size: 18px;
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .items-ctn {
+  }
+}
+.juanchogato{
+    width: 100%;
+    background-size: cover;
+    //background-size: cover;
+    background-repeat: no-repeat;
+}
+.next {
+    top:50%;
+    color: #F4F4F4;
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    left: 0;
+    background-color: orangered;
+    padding: 0 8px;
+    border-radius: 50%;
+
 }
 
-
-/*
-.sliders
-position: relative
-height: 100%
-           width: 100%
-                     .items-ctn
-                     li
-                     img
-                     width: 100%
-                               .nav-ctn
-                               position: absolute
-                               width: 100%
-                                         top: 50%
-                                                left: 0
-li
-position: absolute
-cursor: pointer
-font-size: 18px
-             &.prev
-             left: 0
-&.next*/
+.prev {
+  color: #F4F4F4;
+  top:50%;
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+  right: 0;
+  background-color: orangered;
+  padding: 0 8px;
+  border-radius: 50%;
+}

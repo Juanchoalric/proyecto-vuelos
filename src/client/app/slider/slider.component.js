@@ -11,16 +11,18 @@
         });
     function sliderController(){
 
+        console.log(this);
+
         this.currentIndex = 0;
 
         this.prev = function(){
             if(this.currentIndex === 0)
-                return this.currentIndex = this.hotels.length -1;
+                return this.currentIndex = this.items.length -1;
             this.currentIndex--;
         };
 
         this.next = function(){
-            if(this.currentIndex === this.hotels.length -1)
+            if(this.currentIndex === this.items.length -1)
                 return this.currentIndex = 0;
             this.currentIndex++;
         };

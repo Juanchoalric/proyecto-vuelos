@@ -1,7 +1,7 @@
 div.slider
     ul.item-ctn
         li(ng-repeat="slide in $ctrl.items track by $index")
-            img(ng-src="{{slide}}" ng-show="$ctrl.currentIndex == $index")
+            div.juanchogato(style="background-image:url({{$ctrl.items[$ctrl.currentIndex]}})")
     ul.nav-ctn
-        li(ng-click="$ctrl.prev()") prev
-        li(ng-click="$ctrl.next()") next
+        li.next(ng-click="$ctrl.prev()") &laquo;
+        li.prev(ng-click="$ctrl.next()") &raquo;

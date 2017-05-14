@@ -1,3 +1,5 @@
-div.filter_price
-  p $ precio
-  rzslider(rz-slider-model='slider.min', rz-slider-high='slider.max', rz-slider-options='slider.options')
+div.filter_price(ng-init = "collapsePrice = false" ng-click = "collapsePrice = !collapsePrice")
+  p.precio-range $ precio
+      span(class="fa fa-caret-up")
+  section.filter-search-ctn(ng-show="!collapsePrice")
+    rzslider(rz-slider-model='$ctrl.filters.price.priceMin', rz-slider-high='$ctrl.filters.price.priceMax', rz-slider-options='$ctrl.sliderPrice.options')

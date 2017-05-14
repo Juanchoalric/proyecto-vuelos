@@ -6,13 +6,13 @@
         .component('hotelList',{
           controller: ResultlistController,
           bindings: {
-              hotels: '<'
+              hotels: '<',
+              filters:'<'
           },
             templateUrl:"hotel-result/hotel-list/hotel_list.html"
         });
 
             function ResultlistController(){
-              console.log(this.hotels);
             }
             // ResultlistController.$inject = ["dataservice"];
             //

@@ -1,4 +1,8 @@
-div.buscador
-  p Buscar hotel
-  input(type='text', name='', value='')
-  button(type='submit', name='Buscar hotel') Buscar hotel
+div.buscador  
+  div(ng-init = "collapseSearch = false" ng-click = "collapseSearch = !collapseSearch")
+    p.buscar-info
+      i(class="fa fa fa-search" aria-hidden="true") Buscar hotel
+        span(class="fa fa-caret-up")
+  section.filter-search-ctn(ng-show="!collapseSearch")
+    input(rz-slider-model='$ctrl.filters.price.priceMin', rz-slider-high='$ctrl.filters.price.priceMax', rz-slider-options='$ctrl.sliderPrice.options' placeholder="Ingrese el nombre del hotel")
+    button(ng-click="$ctrl.filterSearch()" type='button') Aceptar

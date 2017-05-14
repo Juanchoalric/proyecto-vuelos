@@ -1,4 +1,3 @@
-
 ul
-    li.claster(ng-repeat='hotel_item in $ctrl.hotels')
-        hotel_item(hotel='hotel_item')
+  li.claster(ng-repeat='hotel_item in $ctrl.hotels | searchFilter:($ctrl.filters.nombreSearch) | filterPrice:($ctrl.filters.price)  track by $index')
+    hotel_item(hotel='hotel_item')

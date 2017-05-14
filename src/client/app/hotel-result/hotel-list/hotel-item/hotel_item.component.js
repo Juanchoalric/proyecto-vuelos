@@ -10,7 +10,7 @@
             },
             templateUrl:"hotel-result/hotel-list/hotel-item/hotel_item.html"
         });
-        
+
     function InfoController(){
 
 

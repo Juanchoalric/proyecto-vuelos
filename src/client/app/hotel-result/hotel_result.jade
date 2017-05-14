@@ -1,8 +1,18 @@
 header
 div.breadcrumb-ctn
 section.search-ctn
-  
+  p Hoteles disponibles para:
+  section.search-info
+    span  
+      i(class="fa fa-search" aria-hidden="true") Madrid &nbsp
+    span 
+      i(class="fa fa-calendar" aria-hidden="true") 16/11/2017 &nbsp
+    span 
+      i(class="fa fa-calendar" aria-hidden="true") 30/11/2017 &nbsp
+    span 
+      i(class="fa fa-user" aria-hidden="true") 2 huéspedes &nbsp
+    a.modificar(href="#") Modificar búsqueda
 section.filter-ctn
-  filter(ng-if="$ctrl.hotels", name="asd")
+  filter(filters='$ctrl.filters' )
 section.hotel-ctn
-    hotel-list(hotels='$ctrl.hotels')
+    hotel-list(hotels='$ctrl.hotels' filters='$ctrl.filters')

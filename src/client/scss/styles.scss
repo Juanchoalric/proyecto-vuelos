@@ -1,7 +1,7 @@
 @import "../app/hotel-result/filter/filter";
 @import "../app/slider/slider";
 @import "./fonts";
-@import "../vendor/angularjs-slider/dist/rzslider.css";
+@import "../vendor/angularjs-slider/dist/rzslider.scss";
 
 
 *{
@@ -12,24 +12,44 @@ body{
   max-width: 1200px;
   font-family: Arial;
   background-color: #F4F4F4;
+  margin: 0 auto;
+}
+.fa{
+  color: gray;
 }
 
+
 .search-ctn {
+  padding: 12px;
   width: 100%;
   height: 100px;
-  border: 1px black solid;
+  border: 1px gray solid;
   margin: 4px;
+  .search-info{
+    span{
+      margin-left: 20px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.fa .fa-caret-up {
+  color: #2E9AFE;
+}
+
+.modificar {
+  margin-left: 20px;
+  text-decoration: none;
 }
 
 .filter-ctn {
   float: left;
   width: 30%;
-  height: 1400px;
-  border: 1px black solid;
   padding: 4px;
   @media screen and (max-width: 1024px) {
     width: 100%;
-    height: 200px;
   }
 }
 
@@ -184,7 +204,7 @@ img {
 }
 
 .secundario{
-  display: inline-block;
+
 }
 
 .principal.after{

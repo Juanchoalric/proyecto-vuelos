@@ -11,8 +11,6 @@
         });
     function sliderController(){
 
-        console.log(this);
-
         this.currentIndex = 0;
 
         this.prev = function(){

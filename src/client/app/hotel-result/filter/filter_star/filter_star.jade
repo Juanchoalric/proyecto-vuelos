@@ -1,29 +1,31 @@
-section.section-stars(ng-init = "collapseStar = false" ng-click = "collapseStar = !collapseStar")
-  p
-    i(class="fa fa fa-star" aria-hidden="true") Estrellas
-      span(class="fa fa-caret-up")
-  ul(ng-show="!collapseStar")
-  li
-    input(type='checkbox', name='vehicle', value='Bike')
-    i Todas las estellas
-  li
-    input(type='checkbox', name='vehicle', value='Bike')
-    i(class="fa fa fa-star" aria-hidden="true")
-    i(class="fa fa fa-star" aria-hidden="true")
-    i(class="fa fa fa-star" aria-hidden="true")
-    i(class="fa fa fa-star" aria-hidden="true")
-    li
-      input(type='checkbox', name='vehicle', value='Bike')
-      i(class="fa fa fa-star" aria-hidden="true")
-      i(class="fa fa fa-star" aria-hidden="true")
-      i(class="fa fa fa-star" aria-hidden="true")
-    li
-      input(type='checkbox', name='vehicle', value='Bike')
-      i(class="fa fa fa-star" aria-hidden="true")
-      i(class="fa fa fa-star" aria-hidden="true")
-    li
-      input(type='checkbox', name='vehicle', value='Bike')
-      i(class="fa fa fa-star" aria-hidden="true")
-    
+section.section-stars
+  div(ng-init = "collapseStar = false" ng-click = "collapseStar = !collapseStar")
+    p
+      i(class="fa fa fa-star" aria-hidden="true") Estrellas
+        span(class="fa fa-caret-up")
+  section(ng-show="!collapseStar")
+    ul
+      li
+        input(type='checkbox', name='vehicle', value='Bike')
+        i Todas las estellas
+      li
+        input(type='checkbox', name='vehicle', value='Bike')
+        i(class="fa fa fa-star" aria-hidden="true")
+        i(class="fa fa fa-star" aria-hidden="true")
+        i(class="fa fa fa-star" aria-hidden="true")
+        i(class="fa fa fa-star" aria-hidden="true")
+        li
+          input(type='checkbox', name='vehicle', value='Bike')
+          i(class="fa fa fa-star" aria-hidden="true")
+          i(class="fa fa fa-star" aria-hidden="true")
+          i(class="fa fa fa-star" aria-hidden="true")
+        li
+          input(type='checkbox', name='vehicle', value='Bike')
+          i(class="fa fa fa-star" aria-hidden="true")
+          i(class="fa fa fa-star" aria-hidden="true")
+        li
+          input(type='checkbox', name='vehicle', value='Bike')
+          i(class="fa fa fa-star" aria-hidden="true")
+      
     
       

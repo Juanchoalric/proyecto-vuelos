@@ -1,0 +1,21 @@
+.buscador {
+  background: white;
+  padding: 12px;
+  margin-top: 4px;
+  box-shadow: 0 1px 3px 0 rgba(119, 119, 119, 0.3);
+  .buscar-info {
+    i{
+      color: #2E9AFE;
+    }
+  }
+    input {
+      display: inline-block;
+      width: 70%;
+    }
+    button{
+      display: inline-block;
+      width: 25%;
+      margin-left: 5%;
+    }
+
+}

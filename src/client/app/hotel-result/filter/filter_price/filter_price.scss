@@ -1,0 +1,46 @@
+.filter_price{
+  margin-top: 8px;
+  box-shadow: 0 1px 3px 0 rgba(119, 119, 119, 0.3);
+  background:white;
+  padding: 12px;
+  .precio-range {
+    color: #2E9AFE;
+    margin-right: 24px;
+    display: inline-block;
+  }
+
+  input {
+      width: 80%;
+  }
+
+  .rzslider{
+      .rz-pointer{
+        background-color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: gray;
+        border-radius: 5px;
+        width: 12px;
+        content: "";
+      }
+      .rz-pointer-min::after{
+        display: none;
+      }
+      .rz-pointer-max::after{
+        display: none;
+      }
+      .rz-limit{
+        display:none;
+      }
+      .rz-bar{
+        height: 8px;
+      }
+      .rz-selection{
+        background: gray;
+      }
+      .rz-bubble.rz-limit{
+        color: snow;
+      }
+  }
+
+}
